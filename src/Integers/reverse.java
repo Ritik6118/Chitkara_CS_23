@@ -1,4 +1,4 @@
-package lec5;
+package Integers;
 
 public class reverse {
 

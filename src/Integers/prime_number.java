@@ -1,4 +1,4 @@
-package lec5;
+package Integers;
 
 import java.util.Scanner;
 

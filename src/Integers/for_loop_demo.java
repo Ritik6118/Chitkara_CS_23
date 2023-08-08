@@ -1,4 +1,4 @@
-package lec5;
+package Integers;
 
 public class for_loop_demo {
 

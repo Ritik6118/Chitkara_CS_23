@@ -14,17 +14,18 @@ public class isAnagram_leetcode_freqArray {
         if(arr1.length!=arr2.length) {
         	return false;
         }
-		int[] freq=new int[26];
+		int[] freq1=new int[26];
+		int[] freq2=new int[26];
 		for(int i=0;i<arr1.length;i++) {
-			freq[arr1[i]-'a']++;
+			freq1[arr1[i]-'a']++;
 			
 		}
 		for(int i=0;i<arr2.length;i++) {
-			freq[arr2[i]-'a']--;
+			freq2[arr2[i]-'a']++;
 			
 		}
-		for(int i=0;i<freq.length;i++) {
-			if(freq[i]!=0) {
+		for(int i=0;i<freq1.length;i++) {
+			if(freq1[i]!=freq2[i]) {
 				return false;
 			}
 		}

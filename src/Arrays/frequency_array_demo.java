@@ -9,13 +9,13 @@ public class frequency_array_demo {
 		for (int i = 0; i < arr.length; i++) {
 			freq[arr[i]]++;
 		}
-		display(freq);
+//		display(freq);
 		
 		// sorting using freq array
-//		sort(freq,arr);
+		sort(freq,arr);
 		
-//		System.out.println();
-//		display(arr);
+		System.out.println();
+		display(arr);
 	}
 
 	private static void sort(int[] freq, int[] arr) {
