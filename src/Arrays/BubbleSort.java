@@ -22,9 +22,9 @@ public class BubbleSort {
 		for(int pass=1;pass<arr.length;pass++) {
 			System.out.println("PASS "+ pass);
 			for(int i=0;i<arr.length-pass;i++) {
-				display(arr,i);
+//				display(arr,i);
 				if(arr[i]>arr[i+1]) {
-					display_swap(arr,i);
+//					display_swap(arr,i);
 					swap(arr,i,i+1);
 				}
 			}
