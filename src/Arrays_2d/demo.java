@@ -14,12 +14,14 @@ public class demo {
 //		
 		Scanner sc=new Scanner(System.in);
 		int n=sc.nextInt();
+		int[][] arr=new int[n][] ;
 		int m=sc.nextInt();
-		int[][] arr=new int[n][m] ;
+		int[] arr2=new int [m];
 		for (int i = 0; i < arr.length; i++) {
-			for (int j = 0; j < arr[0].length; j++) {
-				arr[i][j]=sc.nextInt();
+			for (int j = 0; j < arr2.length; j++) {
+				arr2[j]=sc.nextInt();
 			}
+			arr[i]=arr2;
 		}
 		for (int i = 0; i < arr.length; i++) {
 			for (int j = 0; j < arr[0].length; j++) {
@@ -27,6 +29,7 @@ public class demo {
 			}
 			System.out.println();
 		}
+		
 	}
 
 }
