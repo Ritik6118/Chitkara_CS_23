@@ -24,11 +24,34 @@ public class demo {
 			arr[i]=arr2;
 		}
 		for (int i = 0; i < arr.length; i++) {
-			for (int j = 0; j < arr[0].length; j++) {
+			for (int j = 0; j < arr[i].length; j++) {
 				System.out.print(arr[i][j]+" ");
 			}
 			System.out.println();
 		}
+//		
+//		int[][] arr= {{1,2,3,4,5},
+//					  {1,2},
+//					  {1,2,3},
+//					  {1,2,3,4}};
+		
+		
+		
+//		input
+//		Scanner sc=new Scanner(System.in);
+//		int n=sc.nextInt();
+//		int[][] arr= new int[4][];
+//		for (int i = 0; i < arr.length; i++) {
+//			System.out.println(arr[i]);
+//		}
+//		
+////		print
+//		for (int i = 0; i < arr.length; i++) {
+//			for (int j = 0; j < arr[i].length; j++) {
+//				System.out.print(arr[i][j]+" ");
+//			}
+//			System.out.println();
+//		}
 		
 	}
 
