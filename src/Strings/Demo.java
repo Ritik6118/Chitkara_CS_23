@@ -18,7 +18,7 @@ public class Demo {
 //		String s2="Hello";
 //		
 //		System.out.println(s.endsWith(" "));	
-		String str="abc@def@ghi@jkkl@@mno@pqr@stu@vwx@yz";
+		String str="abc@def@ghi@jkkl@mno@pqr@stu@vwx@yz";
 		String [] arrr=str.split("@");
 		for(int i=0;i<arrr.length;i++) {
 			System.out.println(arrr[i]+" ");

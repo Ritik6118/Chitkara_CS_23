@@ -4,7 +4,7 @@ public class compare_two_strings_lexicographically {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println(Compare("aab","abc"));
+		System.out.println(Compare("abcd","abc"));
 	}
 	
 	public static int Compare(String s1, String s2) {
