@@ -9,7 +9,7 @@ public class Demo {
 		int[] arr= {1,2,3,4};
 		int[] arr2= {1,2,3,4};
 ////		System.out.println(arr==arr2);
-//		String s1="abc";
+		String s1="abc";
 //		String s2=new String("abc");
 //		System.out.println(s1==s2);
 //		System.out.println(s1.equals(s2));
@@ -18,11 +18,11 @@ public class Demo {
 //		String s2="Hello";
 //		
 //		System.out.println(s.endsWith(" "));	
-		String str="abc@def@ghi@jkkl@mno@pqr@stu@vwx@yz";
-		String [] arrr=str.split("@");
-		for(int i=0;i<arrr.length;i++) {
-			System.out.println(arrr[i]+" ");
-		}
+//		String str="abc@def@ghi@jkkl@mno@pqr@stu@vwx@yz";
+//		String [] arrr=str.split("@");
+//		for(int i=0;i<arrr.length;i++) {
+//			System.out.println(arrr[i]+" ");
+//		}
 //		String s="123";
 //		int i=Integer.parseInt(s);
 //		System.out.println(i);
