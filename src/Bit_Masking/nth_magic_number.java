@@ -4,7 +4,7 @@ public class nth_magic_number {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int n=10;
+		int n=3;
 		System.out.println(nth_magic_number(n));
 	}
 
