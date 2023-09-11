@@ -1,5 +1,7 @@
 package Arrays;
 
+import java.util.Arrays;
+
 public class Candy_leetcode {
 
 	public static void main(String[] args) {

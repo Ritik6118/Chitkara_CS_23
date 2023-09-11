@@ -22,5 +22,6 @@ public class first_bad_version_leetcode {
         }
         return ans;
     }
+	
 
 }
