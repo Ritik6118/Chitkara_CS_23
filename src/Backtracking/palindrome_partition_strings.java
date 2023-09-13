@@ -17,14 +17,17 @@ public class palindrome_partition_strings {
 	private static void partition(String s, String ans, List<String> li, List<List<String>> l2) {
 		// TODO Auto-generated method stub
 		if(s.length()==0) {
-			l2.add(new ArrayList<>(li));
+//			System.out.println(ans);
+//			System.out.println(li);
+//			System.out.println(li);
+			l2.add(new ArrayList(li));
 			return;
 		}
 		for(int i=1;i<=s.length();i++) {
 			String st=s.substring(0,i);
 			if(ispalindrome(st)) {
 				li.add(st);
-				partition(s.substring(i),ans+st+"|",li,l2);				
+				partition(s.substring(i),ans+st+"|",li,l2);
 				li.remove(li.size()-1);
 			}
 		}

@@ -1,5 +1,7 @@
 package Backtracking;
-import java.util.*;
+
+import java.util.Scanner;
+
 public class rat_chase_cheese {
 
 	public static void main(String args[]) {
@@ -7,17 +9,18 @@ public class rat_chase_cheese {
         int row=sc.nextInt();
         int col=sc.nextInt();
         char[][] arr=new char[row][];
-        
         for(int i=0;i<row;i++){
             arr[i]=sc.next().toCharArray();
         }
+        
         int[][] ans=new int[row][col];
         solve(arr,0,0,ans);
         if(flag==false){
             System.out.println("NO PATH FOUND");
         }
     }
-    static boolean flag=false;
+    
+	static boolean flag=false;
     public static void solve(char[][] arr,int cr,int cc,int[][]ans){
     	if(cr>=arr.length||cc>=arr[0].length||cr<0||cc<0||arr[cr][cc]=='X'){
     		return;
