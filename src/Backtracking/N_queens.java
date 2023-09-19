@@ -1,5 +1,7 @@
 package Backtracking;
 
+import java.util.*;
+
 public class N_queens {
 
 	public static void main(String[] args) {
@@ -7,12 +9,13 @@ public class N_queens {
 		int n = 4;
 		boolean[][] arr = new boolean[n][n];
 		nqueen(arr, n, 0);
+		System.out.println(li);
 	}
-
+	static List<List<String>> li=new ArrayList<>();
 	private static void nqueen(boolean[][] arr, int q, int row) {
 		// TODO Auto-generated method stub
 		if (q == 0) {
-			display(arr);
+			li.add(display(arr));
 			return;
 		}
 
@@ -25,19 +28,23 @@ public class N_queens {
 		}
 	}
 
-	private static void display(boolean[][] arr) {
+	private static List<String> display(boolean[][] arr) {
 		// TODO Auto-generated method stub
+		List<String> li =new ArrayList<>();
+		
 		for (int row = 0; row < arr.length; row++) {
+			String s="";
 			for (int col = 0; col < arr.length; col++) {
 				if (arr[row][col] == true) {
-					System.out.print("Q ");
+					s+="Q ";
 				} else {
-					System.out.print("_ ");
+					s+="_ ";
 				}
 			}
-			System.out.println();
+			li.add(s);
+			
 		}
-		System.out.println();
+		return li;
 	}
 
 	private static boolean issafe(boolean[][] arr, int row, int col) {
