@@ -6,12 +6,19 @@ public class Demo {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int[] arr= {1,2,3,4};
-		int[] arr2= {1,2,3,4};
-////		System.out.println(arr==arr2);
+//		int[] arr= {1,2,3,4};
+//		int[] arr2= {1,2,3,4};
+//		System.out.println(arr==arr2);
+		
 		String s1="abc";
-//		String s2=new String("abc");
-//		System.out.println(s1==s2);
+		String s3="abc";
+		String s2=new String("abc");
+		System.out.println(s1==s3);
+		s1+="def";
+		String s4 ="abcdef";
+		System.out.println(s4==s1);
+		System.out.println(s1);
+		System.out.println(s3);
 //		System.out.println(s1.equals(s2));
 		//		equals(arr,arr2);
 //		String s="   H e l l o  ";

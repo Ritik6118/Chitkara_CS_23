@@ -8,15 +8,17 @@ public class demo {
 //		Integer num=45;  // autoboxing
 //		int val=num;     // unboxing
 //	System.out.println(num +" "+ val);
-		Integer a=5;
-		Integer b=5;
-		
-		
-		System.out.println(a==b);
-		
-		Integer c=300;
-		Integer d=300;
-		System.out.println(c==d);
+//		Integer a=5;
+//		Integer b=5;
+//		
+//		
+//		Integer a=786;
+//		Integer b=786;
+//		System.out.println(a==b);
+//		
+//		Integer c=300;
+//		Integer d=300;
+//		System.out.println(c==d);
 		
 		
 //		
@@ -27,10 +29,13 @@ public class demo {
 //		System.out.println(d);
 //		String sw="123";
 //		System.out.println(s==sw);
-//		
-//		int n=Integer.parseInt(s);
+//		String s="1234";
+//		float n=Float.parseFloat(s);
 //		System.out.println(n);
-//		
+//		int n=65;
+//		char ch='p';
+//		A
+//		System.out.println((int)ch);
 //		Integer a=new Integer(5);
 //		Integer b=new Integer(5);
 //		System.out.println(a==b);
