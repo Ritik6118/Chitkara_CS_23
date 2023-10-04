@@ -1,24 +1,21 @@
-package OOPS;
+package OOPS_G26;
 
 public class My_Stack {
 	protected int[] arr;
 	protected int top;
 	My_Stack(){
 		this.arr=new int[10];
-		this.top=0;
 	}
-	My_Stack(int len){
-		this.arr=new int[len];
-		this.top=0;
+	My_Stack(int n) {
+		this.arr=new int[n];
 	}
-	
-	public void push(int n ) throws Exception {
+	public void push(int n) throws Exception {
 		// TODO Auto-generated method stub
 		if(this.isFull()) {
 			throw new Exception("Stack is Full");
 		}
 		arr[top]=n;
-		top++;	
+		top++;
 	}
 	public int pop() throws Exception {
 		if(this.isEmpty()) {
@@ -39,13 +36,14 @@ public class My_Stack {
 		}
 		System.out.println("]");
 	}
-	public boolean isFull() {
-		return top==arr.length;
-	}
 	public boolean isEmpty() {
 		return top==0;
+	}
+	public boolean isFull() {
+		return top==arr.length;
 	}
 	public int size() {
 		return top;
 	}
+	
 }

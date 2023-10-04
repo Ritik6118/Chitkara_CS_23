@@ -13,8 +13,8 @@ public class Inheritance {
 		
 //		
 //		Parent p=new Child();
-////		System.out.println(((Child)(p)).d2);
-////		System.out.println(((Child)(p)).d);
+//		System.out.println(((Child)(p)).d2);
+//		System.out.println(((Child)(p)).d);
 //		((Child)(p)).fun();
 //		p.fun();
 		

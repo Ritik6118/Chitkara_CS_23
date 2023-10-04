@@ -5,12 +5,24 @@ import java.util.Random;
 public class Student {
 	String name;
 	int roll_no;
-	int age;
+	private int age;
 	int knowledge;
+	static int count;
+	Student(){
+		count++;
+	}
+	Student(String name ,int roll_no,int age,int knowledge){
+		this.name =name;
+		this.roll_no=roll_no;
+		this.age=age;
+		this.knowledge=knowledge;
+		count++;
+		
+	}
 	
 	public void inroduction() {
 		// TODO Auto-generated method stub
-		System.out.println("Heloo my self "+name+" and my age is "+age);
+		System.out.println("Heloo my self "+name+" and my age is "+getAge());
 	}
 //	study
 	public void study() {
@@ -78,5 +90,18 @@ public class Student {
 			System.out.println(s.name + "wins");
 		}
 	}
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) throws Exception {
+		if(age>0) {
+			this.age = age;			
+		}
+		else {
+			throw new Exception("pagal hai kya age negative hai");
+		}
+		
+	}
+	
 	
 }
