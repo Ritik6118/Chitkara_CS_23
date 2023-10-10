@@ -24,8 +24,7 @@ public class Stock_Span {
 		int [] ans=new int[arr.length]; 
 		for(int i=0;i<arr.length;i++){
 			if(st.isEmpty()||arr[i]<arr[st.peek()]){
-		        ans[i]=1;
-		        st.push(i);
+		        ans[i]=1;		        
 			}
 			else{
 			    int c=1;
@@ -33,8 +32,8 @@ public class Stock_Span {
 			        c+=ans[st.pop()];
 			    }
 			    ans[i]=c;
-			    st.push(i);
 			}
+			st.push(i);
 		}
 		return ans;
 	}
