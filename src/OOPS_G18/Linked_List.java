@@ -1,11 +1,11 @@
 package OOPS_G18;
 
-public class Linked_List {
+public class Linked_List<T> {
 	Node head;
 	Node tail;
 	int size;
 	
-	public void addFirst(int n) {
+	public void addFirst(T n) {
 		Node nn=new Node(n);
 		if(size==0) {
 			head=nn;
@@ -18,7 +18,7 @@ public class Linked_List {
 			size++;
 		}
 	}
-	public void addLast(int n) {
+	public void addLast(T n) {
 		if(size==0) {
 			addFirst(n);
 		}
@@ -29,7 +29,7 @@ public class Linked_List {
 			size++;
 		}
 	}
-	public void addAtIndex(int k,int n) {
+	public void addAtIndex(int k,T n) {
 		if(k==0) {
 			addFirst(n);
 		}
@@ -44,23 +44,23 @@ public class Linked_List {
 			size++;
 		}
 	}
-	public int getFirst() {
+	public T getFirst() {
 		return head.data;
 	}
-	public int getLast() {
+	public T getLast() {
 		return tail.data;
 	}
-	public int getAtIndex(int k) {
+	public T getAtIndex(int k) {
 		return getNode(k).data;
 	}
-	public int removeFirst() {
+	public T removeFirst() {
 		Node rn=head;
 		head=head.next;
 		rn.next=null;
 		size--;
 		return rn.data;
 	}
-	public int removeLast() {
+	public T removeLast() {
 		Node ln=getNode(size-2);
 		Node rn=tail;
 		ln.next=null;
@@ -75,7 +75,7 @@ public class Linked_List {
 		}
 		return temp;
 	}
-	public int removeAtIndex(int k) {
+	public T removeAtIndex(int k) {
 		if(k==0) {
 			return removeFirst();
 		}
@@ -105,9 +105,9 @@ public class Linked_List {
 	
 	
 	public class Node{
-		int data;
+		T data;
 		Node next;
-		Node(int n){
+		Node(T n){
 			this.data=n;
 		}
 	}

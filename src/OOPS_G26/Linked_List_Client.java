@@ -1,12 +1,10 @@
-package OOPS_G18;
+package OOPS_G26;
 
 public class Linked_List_Client {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Linked_List<String> ll=new Linked_List<>();
-		ll.addFirst("abcd");
-		ll.addFirst("efgh");
+		Linked_List <String> ll=new Linked_List<>();
 //		ll.addFirst(0);
 //		ll.addFirst(0);
 //		ll.addFirst(0);
@@ -20,6 +18,8 @@ public class Linked_List_Client {
 //		System.out.println(ll.removeAtIndex(3));
 //		System.out.println(ll.removeFirst());
 //		System.out.println(ll.removeLast());
+		ll.addFirst("abc");
+		ll.addFirst("def");
 		ll.display();
 	}
 

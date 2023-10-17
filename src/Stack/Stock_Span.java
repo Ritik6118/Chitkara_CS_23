@@ -28,7 +28,7 @@ public class Stock_Span {
 			}
 			else{
 			    int c=1;
-			    while(st.isEmpty()==false && arr[i]>arr[st.peek()]){
+			    while(st.isEmpty()==false && arr[i]>=arr[st.peek()]){
 			        c+=ans[st.pop()];
 			    }
 			    ans[i]=c;
