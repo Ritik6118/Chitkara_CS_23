@@ -14,8 +14,8 @@ public class print_subseq_string {
 			System.out.println(ans);
 			return;
 		}
-		subseq(s.substring(1),ans);
 		subseq(s.substring(1),ans+s.charAt(0));
+		subseq(s.substring(1),ans);
 		
 	}
 

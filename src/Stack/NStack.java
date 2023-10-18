@@ -1,7 +1,6 @@
 package Stack;
 
 import java.util.* ;
-import java.io.*; 
 public class NStack {
     // Initialize your data structure.
     int [] arr;

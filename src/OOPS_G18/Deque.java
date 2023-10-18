@@ -1,12 +1,18 @@
-package OOPS_G26;
+package OOPS_G18;
 
 public class Deque {
-	int [] arr;
+	int[] arr;
 	int front;
 	int rear;
 	int size;
 	Deque(){
-		this.arr=new int[10];
+		arr=new int[10];
+		front=0;
+		rear=0;
+		size=0;
+	}
+	Deque(int n){
+		arr=new int[n];
 		front=0;
 		rear=0;
 		size=0;
@@ -19,7 +25,7 @@ public class Deque {
 		else {
 			front--;
 			if(front<0) {
-				 front=arr.length-1;
+				front=arr.length-1;
 			}
 			arr[front]=n;
 			size++;
@@ -29,7 +35,7 @@ public class Deque {
 		if(size==0) {
 			pushFront(n);
 		}
-		else {			
+		else {
 			rear++;
 			rear%=arr.length;
 			arr[rear]=n;
@@ -51,14 +57,12 @@ public class Deque {
 		}
 		size--;
 		return val;
-		
 	}
-	public boolean isFull() {
-		return size==arr.length;
-		
+	public int peekFront() {
+		return arr[front];
 	}
-	public boolean isEmpty() {
-		return size==0;
+	public int peekBack() {
+		return arr[rear];
 	}
 	public int size() {
 		return size;
@@ -71,4 +75,5 @@ public class Deque {
 		}
 		System.out.println();
 	}
+	
 }
