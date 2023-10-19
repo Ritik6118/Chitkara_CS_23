@@ -24,6 +24,5 @@ public class Can_all_number_be_equal {
 		}
 		System.out.println("Yes");
 	}
-
 }
  
