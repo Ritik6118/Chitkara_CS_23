@@ -15,7 +15,7 @@ public class good_subarray {
 		// TODO Auto-generated method stub
 		int c=0;
 		for(int i=0;i<arr.length;i++) {
-			for(int j=i+1;j<arr.length;j++) {
+			for(int j=i;j<arr.length;j++) {
 				if(isgood(arr,i,j,d)) {
 					c++;
 				}
